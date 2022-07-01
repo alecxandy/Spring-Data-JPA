@@ -37,6 +37,7 @@ public class FornecedorController {
         return ResponseEntity.status(HttpStatus.CREATED).body(fornecedorService.save(fornecedor));
     }
 
+
     @PutMapping("/update")
     public ResponseEntity<Fornecedor> update(@RequestBody Fornecedor fornecedor) {
         return ResponseEntity.notFound().build();
